@@ -1,0 +1,114 @@
+
+/************************************************************************************
+smaller than 1200               900-1200
+*************************************************************************************/
+@media screen and (max-device-width: 1200px)
+and (min-device-width: 768px){
+
+    p {
+        margin: 0 0 1.2em;
+        padding: 0;
+        font-size: 50px;
+    }
+
+}
+
+/************************************************************************************
+smaller than 900                 600-900
+*************************************************************************************/
+@media only screen
+and (min-device-width: 600px)
+and (max-device-width: 900px)
+and (-webkit-min-device-pixel-ratio: 1) {
+    p {
+        margin: 0 0 1.2em;
+        padding: 0;
+        font-size: 30px;
+    }
+}
+
+
+
+
+/************************************************************************************
+smaller than 600                250-600
+*************************************************************************************/
+@media screen and (max-width: 600px)
+and (min-device-width: 250px){
+
+    /* brand */
+    #brand {
+        margin: 0px 0px 0px 0;
+        position: static;
+    }
+    .cap-bot figcaption {
+        position: absolute;
+        bottom: 0;
+        background: #FFC300 !important;
+        color: black;
+        width: 100%;
+        font-size: 1.5rem;
+        padding: .2rem;
+        float: left;
+        height: 90px;
+        text-align: left;
+    }
+    .hair{
+        font-size: 25px;
+        padding: 0 0 0 5px;
+        margin: 5px 0 0 5px;
+    }
+    .carousel {
+        height: 30%;
+    }
+    p.sub a {
+        margin: 1px 0 2px 10px;
+        color: white;
+        padding: 2px 0 0px 0px;
+
+    }
+
+    p.sub a{
+        text-decoration: none !important;
+
+    }
+    p {
+        margin: 0 0 1.2em;
+        padding: 0;
+        font-size: 12px;
+    }
+    h2.desc{
+        font-size: 18px;
+        border-bottom: 1px solid black;
+    }
+    h2.descc{
+        font-size: 18px;
+        border-bottom: 2px solid black;
+    }
+ /*   input[type=text] {
+        width: 90%;
+        padding: 12px 20px;
+        margin: 8px 0;
+        box-sizing: border-box;
+        border: none;
+        background-color: #eeeeee;
+        color: black;
+    }*/
+    ul{
+        background-color: #999999;
+        font-size: larger;
+        color: black;
+    }
+
+    .social-icons{
+       align-items: center;
+    }
+    /* disable webkit text size adjust (for iPhone) */
+    html {
+        -webkit-text-size-adjust: none;
+    }
+
+
+
+}
+
