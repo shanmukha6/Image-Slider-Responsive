@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>ADVANCED CSS3 | SELECT ELEMENT WITH UNICODE BUTTON SYMBOL</title>
+        <meta name="Description" content="Drop-down control with Unicode symbol placed on pull-button and other CSS3 styling technique" />
+
+        <style type="text/css">
+            /*SELECT ELEMENT WITH UNICODE SYMBOL: DOWN-ARROW (&#x25bc;)*/
+            select#selectPointOfInterest
+            {
+               width                    : 185pt;
+               height                   : 40pt;
+               line-height              : 40pt;
+               padding-right            : 20pt;
+               text-indent              : 4pt;
+               text-align               : left;
+               vertical-align           : middle;
+               box-shadow               : inset 0 0 3px #606060;
+               border                   : 1px solid #acacac;
+               -moz-border-radius       : 6px;
+               -webkit-border-radius    : 6px;
+               border-radius            : 6px;
+               -webkit-appearance       : none;
+               -moz-appearance          : none;
+               appearance               : none;  /*IMPORTANT*/
+               font-family              : Arial,  Calibri, Tahoma, Verdana;
+               font-size                : 18pt;
+               font-weight              : 500;
+               color                    : #000099;
+               cursor                   : pointer;
+               outline                  : none;
+            }
+            select#selectPointOfInterest::-ms-expand {display: none;} /*FOR IE*/
+            select#selectPointOfInterest option
+            {
+                padding             : 4px 10px 4px 10px;
+                font-size           : 11pt;
+                font-weight         : normal;
+            }
+            select#selectPointOfInterest option[selected]{ font-weight:bold}
+            select#selectPointOfInterest option:nth-child(even) { background-color:#f5f5f5; }
+            select#selectPointOfInterest:hover {font-weight: 700;}
+            select#selectPointOfInterest:focus {box-shadow: inset 0 0 5px #000099; font-weight: 600;}
+
+            /*LABEL FOR SELECT*/
+            label#lblSelect{ position: relative; display: inline-block;}
+            /*DOWNWARD ARROW (25bc)*/
+            label#lblSelect::after
+            {
+                content                 : "\25bc";
+                position                : absolute;
+                top                     : 0;
+                right                   : 0;
+                bottom                  : 0;
+                width                   : 20pt;
+                line-height             : 40pt;
+                vertical-align          : middle;
+                text-align              : center;
+                background              : #000099;
+                color                   : #fefefe;
+               -moz-border-radius       : 0 6px 6px 0;
+               -webkit-border-radius    : 0 6px 6px 0;
+                border-radius           : 0 6px 6px 0;
+                pointer-events          : none;
+            }
+        </style>
+    </head>
+
+    <body>
+        <br />
+        <label id="lblSelect">
+            <select id="selectPointOfInterest" title="Select points of interest nearby">
+                <option>caffe</option>
+                <option>food beverage</option>
+                <option>restaurant</option>
+                <option>shopping</option>
+                <option>taxi limo</option>
+                <option>theatre</option>
+                <option>museum</option>
+                <option>computers</option>
+            </select>
+        </label>
+</body>
+</html>
